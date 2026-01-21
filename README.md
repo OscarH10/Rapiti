@@ -1,4 +1,9 @@
 # RapiƟ – Comparador de Precios Locales
+    TL - HECTOR ULISES CACHO GONZALEZ
+    BE -CIRO JULIAN CERVANTES ZAMORA
+    FE - DANA LIZBETH CASTAÑEDA SÁNCHEZ
+    QA - CONCEPCIÓN GUADALUPE PANIAGUA GONZÁLEZ
+    DO - OSCAR YAEL HERNÁNDEZ RODRÍGUEZ
 
 RapiƟ es una aplicación web diseñada para permitir a los usuarios comparar precios de productos básicos en tiendas locales de la zona metropolitana de Puebla, ayudando a ahorrar tiempo y dinero.
 
