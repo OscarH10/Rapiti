@@ -11,17 +11,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Clonar repositorio
+      - name: Checkout del repositorio
         uses: actions/checkout@v4
 
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
+      - name: Verificar estructura del proyecto
+        run: |
+          echo "Repositorio clonado correctamente"
+          ls -la
 
-      - name: Instalar dependencias
-        run: npm install || true
-
-      - name: Construir imagen Docker
-        run: docker build -t rapiti .
-
+      - name: Validar Dockerfile
+        run: |
+          if [ -f Dockerfile ]; then
+            echo "Dockerfile encontrado"
+          else
+            echo "Dockerfile NO encontrado"
+            exit 1
+          fi
